@@ -1,0 +1,32 @@
+{
+  "axes.grid": true,
+  "axes.labelsize": "large",
+  "axes.titlesize": "x-large",
+
+  "examples.directory": "",
+  "examples.download": true,
+
+  "legend.fancybox": true,
+
+  "lines.linewidth": 2.0,
+
+  "patch.linewidth": 0.5,
+
+  "svg.embed_char_paths": "path",
+
+  "text.color": "black",
+
+  "axes.unicode_minus": true,
+  "axes.color_cycle": [
+      "#9c9cdb",
+      "#4d5585",
+      "#b4cc6a",
+      "#64783a",
+      "#e3ba54",
+      "#8c6d34"
+  ],
+  "axes.edgecolor": "black",
+  "axes.facecolor": "white",
+
+  "image.cmap": "coolwarm"
+}
