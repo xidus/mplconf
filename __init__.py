@@ -140,12 +140,13 @@ def SaveFig(fname,
 
 # -------------------------------------------------------------------------- #
 def fill_between_steps(x, y,
+                       ax=None,
                        where='post',
                        l='open',
                        r='open',
                        bottom=0,
-                       plotkwargs=None,
-                       fillkwargs=None,
+                       pkw=None,
+                       fkw=None,
                        nofill=False
                        ):
     """
@@ -177,24 +178,26 @@ def fill_between_steps(x, y,
     stepy = stepsy(y, where=where, left=l, right=r, bottom=bottom)
 
     # Default kwargs for the line and fill plot
-    if plotkwargs is None:
-        # plotkwargs = dict(color='b', linewidth=1.5)
-        plotkwargs = {}
+    if pkw is None:
+        # pkw = dict(color='b', linewidth=1.5)
+        pkw = {}
 
-    if fillkwargs is None:
-        # fillkwargs = dict(facecolor='b', linewidth=0, alpha=0.2)
-        fillkwargs = {}
+    if fkw is None:
+        # fkw = dict(facecolor='b', linewidth=0, alpha=0.2)
+        fkw = {}
 
     # Plot line
-#    plothandle = plt.plot(x, y, ls='steps-%s' % where, **plotkwargs)
-    plothandle = plt.plot(stepx, stepy, **plotkwargs)
+    if ax is not None:
+        ax.plot(stepx, stepy, **pkw)
+        if nofill is False:
+            ax.fill_between(stepx, stepy, bottom, **fkw)
+        return None
 
-    # Plot fill
-    if nofill is False:
-        plt.fill_between(stepx, stepy, bottom, **fillkwargs)
-
-    # Only return the handles and labels for the line
-    return plothandle
+    else:
+        plothandle = plt.plot(stepx, stepy, **pkw)
+        if nofill is False:
+            plt.fill_between(stepx, stepy, bottom, **fkw)
+        return plothandle
 
 
 def stepsx(x,
