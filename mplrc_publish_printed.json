@@ -18,15 +18,19 @@
 
   "axes.unicode_minus": true,
   "axes.color_cycle": [
-      "#9c9cdb",
-      "#4d5585",
-      "#b4cc6a",
-      "#64783a",
-      "#e3ba54",
-      "#8c6d34"
+    "#348ABD",
+    "#A60628",
+    "#7A68A6",
+    "#467821",
+    "#CF4457",
+    "#188487",
+    "#E24A33"
   ],
   "axes.edgecolor": "black",
   "axes.facecolor": "white",
 
-  "image.cmap": "coolwarm"
+  "image.cmap": "coolwarm",
+
+  "patch.edgecolor": "#eeeeee"
+
 }
