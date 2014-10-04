@@ -106,7 +106,7 @@ def mplrc(*args):
             # print 'Updated MPL rc parameters using {} ...'.format(fname)
 
         except:
-            print 'Could not load custom MPL rc parameters for {} ...'.format(fname)
+            print('Could not load custom MPL rc parameters for {} ...'.format(fname))
             continue
 
 
@@ -114,28 +114,6 @@ def mplrc(*args):
 def rmath(s):
     """If text.usetex is False, this can ease the pain of manually writing TeX strings."""
     return r'$\mathrm{{{}}}$'.format('\ '.join(s.split(' ')))
-
-
-# -------------------------------------------------------------------------- #
-# SAVING FIGURES (Note the capitalization of SaveFig vs. savefig.)
-def SaveFig(fname,
-            dpi=600,
-            facecolor='w',
-            edgecolor='w',
-            orientation='portrait',
-            papertype=None,         # PS only ('letter', 'legal', 'a0'-'a10', ..)
-            transparent=False,
-            bbox_inches=None,       # boundary box. 'tight' => fig.suptitle cropped away.
-            pad_inches=.1           # pad_inches
-            ):
-
-    raise Exception('SaveFig() is deprecated. Please use plt.savefig() instead')
-
-    plt.savefig(fname, dpi=dpi, facecolor=facecolor, edgecolor=edgecolor,
-                orientation=orientation, papertype=papertype,
-                transparent=transparent, bbox_inches=bbox_inches,
-                pad_inches=pad_inches
-                )
 
 
 # -------------------------------------------------------------------------- #
