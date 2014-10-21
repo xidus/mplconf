@@ -1,24 +1,6 @@
 {
-  "figure": {
-    "edgecolor": "black",
-    "facecolor": "white",
-    "dpi": 80,
-    "figsize": [14, 8.75]
-  },
-  "savefig": {
-    "edgecolor": "white",
-    "pad_inches": 0.1,
-    "bbox": "tight",
-    "dpi": 300,
-    "facecolor": "white"
-  },
-  "text": {
-    "color": "black",
-    "usetex": false
-  },
 
-  "image.cmap": "coolwarm",
-
+  "axes.axisbelow": false,
   "axes.color_cycle": [
       "#9c9cdb",
       "#4d5585",
@@ -27,49 +9,59 @@
       "#e3ba54",
       "#8c6d34"
   ],
-  "axes": {
-    "edgecolor": "black",
-    "facecolor": "white",
-    "axisbelow": false,
-    "labelweight": "normal",
-    "labelcolor": "black",
-    "grid": true,
-    "unicode_minus": true,
-    "linewidth": 1.0,
-    "labelsize": 14
-  },
-  "lines": {
-    "linewidth": 1.0,
-    "markeredgewidth": 0.5,
-    "markersize": 6,
-    "linestyle": "-",
-    "marker": null
-  },
-  "xtick": {
-    "color": "k",
-    "labelsize": 11
-  },
-  "ytick": {
-    "color": "k",
-    "labelsize": 11
-  },
-  "grid": {
-    "color": "black",
-    "linewidth": 0.5,
-    "linestyle": ":"
-  },
-  "font": {
-    "serif": "Palatino",
-    "family": "serif",
-    "size": 18
-  },
-  "legend": {
-    "fancybox": true,
-    "fontsize": 11,
-    "borderpad": 0.5,
-    "shadow": false,
-    "markerscale": 1.0,
-    "numpoints": 1,
-    "frameon": true
-  }
+  "axes.edgecolor": "black",
+  "axes.facecolor": "white",
+  "axes.grid": true,
+  "axes.labelcolor": "black",
+  "axes.labelsize": 14,
+  "axes.labelweight": "normal",
+  "axes.linewidth": 1.0,
+  "axes.unicode_minus": true,
+
+  "figure.edgecolor": "black",
+  "figure.facecolor": "white",
+  "figure.dpi": 80,
+  "figure.figsize": [14, 8.75],
+
+  "font.serif": "Palatino",
+  // "font.family": "serif",
+  "font.size": 18,
+
+  "grid.color": "black",
+  "grid.linewidth": 0.5,
+  "grid.linestyle": ":",
+
+  "image.aspect": "equal",
+  "image.cmap": "coolwarm",
+  "image.interpolation": null,
+
+  "legend.borderpad": 0.5,
+  "legend.fancybox": true,
+  "legend.fontsize": 11,
+  "legend.frameon": true,
+  "legend.markerscale": 1.0,
+  "legend.numpoints": 1,
+  "legend.shadow": false,
+
+  "lines.linestyle": "-",
+  "lines.linewidth": 1.0,
+  "lines.marker": null,
+  "lines.markeredgewidth": 0.5,
+  "lines.markersize": 6,
+
+  "savefig.bbox": "tight",
+  "savefig.dpi": 100,
+  "savefig.edgecolor": "white",
+  "savefig.facecolor": "white",
+  "savefig.pad_inches": 0.1,
+
+  "text.color": "black",
+  "text.usetex": false,
+
+  "xtick.color": "k",
+  "xtick.labelsize": 11,
+
+  "ytick.color": "k",
+  "ytick.labelsize": 11
+
 }

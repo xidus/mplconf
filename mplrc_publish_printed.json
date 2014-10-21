@@ -1,22 +1,5 @@
 {
-  "axes.grid": true,
-  "axes.labelsize": "large",
-  "axes.titlesize": "x-large",
 
-  "examples.directory": "",
-  "examples.download": true,
-
-  "legend.fancybox": true,
-
-  "lines.linewidth": 2.0,
-
-  "patch.linewidth": 0.5,
-
-  "svg.embed_char_paths": "path",
-
-  "text.color": "black",
-
-  "axes.unicode_minus": true,
   "axes.color_cycle": [
     "#348ABD",
     "#A60628",
@@ -28,9 +11,26 @@
   ],
   "axes.edgecolor": "black",
   "axes.facecolor": "white",
+  "axes.grid": true,
+  "axes.labelsize": "large",
+  "axes.titlesize": "x-large",
+  "axes.unicode_minus": true,
+
+  "examples.directory": "",
 
   "image.cmap": "coolwarm",
 
-  "patch.edgecolor": "#eeeeee"
+  "legend.fancybox": true,
+
+  "lines.linewidth": 2.0,
+
+  "patch.linewidth": 0.5,
+  "patch.edgecolor": "#eeeeee",
+
+  "savefig.dpi": 300,
+
+  "svg.fonttype": "path",
+
+  "text.color": "black",
 
 }
