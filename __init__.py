@@ -100,14 +100,23 @@ def mplrc(*args):
 
     for fname in fnames:
 
-        try:
-            ifname = os.path.join(dname, fname)
-            mpl.rcParams.update(json.load(open(ifname)))
-            # print 'Updated MPL rc parameters using {} ...'.format(fname)
-
-        except:
-            print('Could not load custom MPL rc parameters for {} ...'.format(fname))
+        ifname = os.path.join(dname, fname)
+        if not os.path.isfile(ifname):
+            print('mplrc: file does not exist:\n  {}...'.format(ifname))
             continue
+
+        with open(ifname) as fsock:
+            params = json.load(fsock)
+
+        for key, val in params.items():
+
+            try:
+                mpl.rcParams[key] = val
+
+            except Exception as e:
+                print(fname, ': Error adding key \'{}\': {}'.format(key, val))
+                print(fname, ': Exception was:', e)
+                continue
 
 
 # -------------------------------------------------------------------------- #
