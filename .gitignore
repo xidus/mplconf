@@ -1,8 +1,10 @@
-# Files ignored by git!
+*~
+
+__pycache__
+
 .gitconfig
 
-# Python
 *.npy
 *.pyc
 
-*~
+rcparams*
