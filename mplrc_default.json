@@ -24,7 +24,6 @@
   "figure.figsize": [14, 8.75],
 
   "font.serif": "Palatino",
-  // "font.family": "serif",
   "font.size": 18,
 
   "grid.color": "black",
